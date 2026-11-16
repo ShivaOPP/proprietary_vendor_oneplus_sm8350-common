@@ -18550,3 +18550,33 @@ install_symlink {
     installed_location: "lib64/libq3dtools_adreno.so",
     symlink_target: "/vendor/lib64/egl/libq3dtools_adreno.so",
 }
+
+filegroup {
+    name: "porsche_gps_conf",
+    srcs: ["proprietary/vendor/etc/gps.conf"],
+}
+
+filegroup {
+    name: "porsche_flp_conf",
+    srcs: ["proprietary/vendor/etc/flp.conf"],
+}
+
+filegroup {
+    name: "porsche_gnss_antenna_info_conf",
+    srcs: ["proprietary/vendor/etc/gnss_antenna_info.conf"],
+}
+
+filegroup {
+    name: "porsche_gnss_base_policy",
+    srcs: ["proprietary/vendor/etc/seccomp_policy/gnss@2.0-base.policy"],
+}
+
+filegroup {
+    name: "porsche_gnss_xtra_policy",
+    srcs: ["proprietary/vendor/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy"],
+}
+
+filegroup {
+    name: "porsche_gnss_xtwifi_policy",
+    srcs: ["proprietary/vendor/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy"],
+}
